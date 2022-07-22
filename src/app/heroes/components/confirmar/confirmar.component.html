@@ -1,0 +1,13 @@
+<h1>Are you sure?</h1>
+<hr>
+
+<p>
+  You are deleting a record {{ data.superhero }}
+  <br>
+  Continue?
+</p>
+
+<div>
+  <button mat-button (click)="delete()" color="warn">Yes, delete!</button>
+  <button mat-button (click)="close()" >No, sorry!</button>
+</div>
