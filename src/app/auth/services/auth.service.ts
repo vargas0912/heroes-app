@@ -44,4 +44,8 @@ export class AuthService {
         tap( auth => localStorage.setItem('id', auth.id ))
       );
   }
+
+  logOut(){
+    localStorage.removeItem('id');
+  }
 }
